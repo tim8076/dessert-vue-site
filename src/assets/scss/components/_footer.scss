@@ -1,0 +1,13 @@
+.footer-decoration {
+  position: absolute;
+  top: -153px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 306px;
+  height: 306px;
+  border-radius: 100%;
+  background-color: $primary-100;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 282px 264px;
+}

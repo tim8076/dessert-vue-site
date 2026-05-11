@@ -1,0 +1,30 @@
+.nav-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  &-link {
+    color: $gray-600;
+  }
+  &-link.active {
+    color: $dark;
+  }
+  li:not(:last-child) {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      right: -24px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background-image: url('/icon/chevron-right.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.article-list {
+  margin-top: 72px;
+  @include media-breakpoint-up(md) {
+    margin-top: 96px;
+  }
+  .article {
+    &-image {
+      width: 100%;
+      height: 243px;
+      object-fit: cover;
+      @include media-breakpoint-up(md) {
+        height: 288px;
+      }
+    }
+    .title {
+      color: $dark;
+    }
+    &:hover .title {
+      color: $primary;
+    }
+  }
+}

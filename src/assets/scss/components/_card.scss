@@ -1,0 +1,26 @@
+.card-product {
+  img {
+    transition: transform 0.5s ease-in-out;
+  }
+  &:hover img {
+    transform: scale(1.2);
+  }
+  &-img-btn {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    bottom: -58px;
+    left: 0;
+  }
+  &:hover &-img-btn {
+    bottom: 0;
+  }
+  &:hover .home-product-img-btn {
+    bottom: 0;
+    transition: bottom 0.5s ease-in-out;
+  }
+  &-img {
+    position: relative;
+    height: 358px;
+    overflow: hidden;
+  }
+}

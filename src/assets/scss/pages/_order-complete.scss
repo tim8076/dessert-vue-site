@@ -1,0 +1,6 @@
+.order-complete {
+  margin-top: 72px;
+  @include media-breakpoint-up(md) {
+    margin-top: 96px;
+  }
+}

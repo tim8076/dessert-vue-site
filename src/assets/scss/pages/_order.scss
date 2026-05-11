@@ -1,0 +1,37 @@
+.order-view {
+  margin-top: 72px;
+  @include media-breakpoint-up(md) {
+    margin-top: 96px;
+  }
+  th, td {
+    padding: 1rem;
+    vertical-align: middle;
+  }
+  .table-image {
+    width: 20px;
+    height: 20px;
+    @include media-breakpoint-up(md) {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+  }
+  .delete-btn {
+    color: $dark;
+    &:hover {
+      color: $danger;
+    }
+  }
+  .num-input {
+    width: 80px;
+    @include media-breakpoint-up(md) {
+      width: 120px;
+    }
+  }
+  .coupon-input {
+    width: 100px;
+    @include media-breakpoint-up(md) {
+      width: 200px;
+    }
+  }
+}
