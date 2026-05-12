@@ -13,9 +13,9 @@
   </div>
 </template>
 <script>
-import new1Image from '/image/home/news-1.svg';
-import new2Image from '/image/home/news-2.svg';
-import new3Image from '/image/home/news-3.svg';
+import new1Image from '@/assets/image/home/news-1.svg';
+import new2Image from '@/assets/image/home/news-2.svg';
+import new3Image from '@/assets/image/home/news-3.svg';
 export default {
   name: 'ArticleView',
   data() {

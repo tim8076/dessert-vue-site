@@ -19,7 +19,7 @@ import { localize, loadLocaleFromURL, setLocale } from '@vee-validate/i18n'
 
 configure({
   generateMessage: localize({
-    zh_TW: loadLocaleFromURL('/zh_TW.json')
+    zh_TW: loadLocaleFromURL(`${import.meta.env.BASE_URL}zh_TW.json`)
   }),
   validateOnInput: true
 })

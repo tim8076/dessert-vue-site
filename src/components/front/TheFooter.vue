@@ -67,10 +67,10 @@
   </footer>
 </template>
 <script>
-import facebookIcon from '/image/footer/facebook.svg';
-import instagramIcon from '/image/footer/instagram (1).svg';
-import twitterIcon from '/image/footer/twitter.svg';
-import headerLogo from '/image/main-logo.svg';
+import facebookIcon from '@/assets/image/footer/facebook.svg';
+import instagramIcon from '@/assets/image/footer/instagram (1).svg';
+import twitterIcon from '@/assets/image/footer/twitter.svg';
+import headerLogo from '@/assets/image/main-logo.svg';
 
 export default {
   data() {

@@ -1,5 +1,7 @@
 <template>
-  <div class="home-banner bg-cover" style="background-image: url('/image/home/home-banner.svg');">
+  <div class="home-banner bg-cover" :style="{
+    backgroundImage: `url(${homeBanner})`
+  }">
     <div class="container d-flex flex-column justify-content-center h-100">
       <h1 class="text-light fs-2 fs-md-d mb-6">
         甜點・<br>
@@ -21,7 +23,7 @@
       </div>
     </div>
   </div>
-  <div class="py-18 pt-lg-36 pb-lg-53 bg-cover" style="background-image: url('/image/home/product-bg.jpg');">
+  <div class="py-18 pt-lg-36 pb-lg-53 bg-cover" :style="{ backgroundImage: `url(${productBg})` }">
     <div class="container">
       <h2 class="text-primary-800 text-md-center fs-lg-1 mb-4">甜蜜推薦<span class="d-none d-md-inline">，</span><br
           class="d-md-none">讓心動更靠近！
@@ -47,7 +49,7 @@
       </ul>
     </div>
   </div>
-  <div class="home-news py-18 py-lg-36" style="background-image: url('/image/home/news-bg.svg')">
+  <div class="home-news py-18 py-lg-36" :style="{ backgroundImage: `url(${newsBg})` }">
     <div class="container">
       <h2 class="text-primary-800 fs-lg-1 mb-4">最新消息</h2>
       <p class="text-gray-700 mb-12 mb-lg-32">探索最新公益成果，與我們一起改變世界。</p>
@@ -105,7 +107,7 @@
       </div>
     </div>
   </div>
-  <div class="home-thanks pt-18 pb-64 pt-lg-36 bg-cover" style="background-image: url('/image/home/thanks-bg.jpg')">
+  <div class="home-thanks pt-18 pb-64 pt-lg-36 bg-cover" :style="{ backgroundImage: `url(${thankBg})` }">
     <div class="container text-light">
       <h2 class="fs-lg-1 mb-6 mb-lg-4">感謝有您</h2>
       <p class="fs-7 fs-md-6">您的每一次捐款，都是一個幸福的故事。</p>
@@ -113,7 +115,7 @@
       <ul class="list-unstyled row font-serif gy-6">
         <li class="col-md-6 col-lg-3 d-flex justify-content-center">
           <div class="home-thanks-circle down d-flex flex-column justify-content-center align-items-center"
-            style="background-image: url('/image/home/thanks-flower.svg')">
+            :style="{ backgroundImage: `url('${thankFlower}')` }">
             <p class="fs-5 text-dark mb-6">
               <span class="fs-1 text-primary-800">300</span>
               多隻
@@ -123,7 +125,7 @@
         </li>
         <li class="col-md-6 col-lg-3 d-flex justify-content-center">
           <div class="home-thanks-circle d-flex flex-column justify-content-center align-items-center"
-            style="background-image: url('/image/home/thanks-flower.svg')">
+            :style="{ backgroundImage: `url('${thankFlower}')` }">
             <p class="fs-5 text-dark mb-6">
               已募集愛心
             </p>
@@ -135,7 +137,7 @@
         </li>
         <li class="col-md-6 col-lg-3 d-flex justify-content-center">
           <div class="home-thanks-circle down d-flex flex-column justify-content-center align-items-center"
-            style="background-image: url('/image/home/thanks-flower.svg')">
+            :style="{ backgroundImage: `url('${thankFlower}')`, backgroundImage }">
             <p class="fs-5 text-dark mb-6">
               <span class="fs-1 text-primary-800">500</span>
               多位
@@ -145,7 +147,7 @@
         </li>
         <li class="col-md-6 col-lg-3 d-flex justify-content-center">
           <div class="home-thanks-circle d-flex flex-column justify-content-center align-items-center"
-            style="background-image: url('/image/home/thanks-flower.svg')">
+            :style="{ backgroundImage: `url('${thankFlower}')` }">
             <p class="fs-5 text-dark mb-6">
               <span class="fs-1 text-primary-800">200</span>
               顆
@@ -236,16 +238,21 @@
   </footer> -->
 </template>
 <script>
-import arrowRightIcon from '/image/home/arrow_right.svg';
-import arrowRightIconBrown from '/image/home/arrow_right-brown.svg';
+import homeBanner from '@/assets/image/home/home-banner.svg';
+import productBg from '@/assets/image/home/product-bg.jpg';
+import newsBg from '@/assets/image/home/news-bg.svg';
+import thankBg from '@/assets/image/home/thanks-bg.jpg';
+import arrowRightIcon from '@/assets/image/home/arrow_right.svg';
+import arrowRightIconBrown from '@/assets/image/home/arrow_right-brown.svg';
 import productStore from '@/stores/productStore';
-import new1Image from '/image/home/news-1.svg';
-import new2Image from '/image/home/news-2.svg';
-import new3Image from '/image/home/news-3.svg';
-import headerLogo from '/image/main-logo.svg';
-import facebookIcon from '/image/footer/facebook.svg';
-import instagramIcon from '/image/footer/instagram (1).svg';
-import twitterIcon from '/image/footer/twitter.svg';
+import new1Image from '@/assets/image/home/news-1.svg';
+import new2Image from '@/assets/image/home/news-2.svg';
+import new3Image from '@/assets/image/home/news-3.svg';
+import headerLogo from '@/assets/image/main-logo.svg';
+import facebookIcon from '@/assets/image/footer/facebook.svg';
+import instagramIcon from '@/assets/image/footer/instagram (1).svg';
+import twitterIcon from '@/assets/image/footer/twitter.svg';
+import thankFlower from '@/assets/image/home/thanks-flower.svg';
 import { mapState, mapActions } from 'pinia';
 export default {
   data() {
@@ -259,6 +266,11 @@ export default {
       facebookIcon,
       instagramIcon,
       twitterIcon,
+      homeBanner,
+      productBg,
+      newsBg,
+      thankBg,
+      thankFlower,
     }
   },
   computed: {

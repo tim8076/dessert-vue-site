@@ -95,9 +95,9 @@
   </div>
 </template>
 <script>
-import searchIcon from '/icon/magnifying-glass.svg';
-import CircleButton from '/icon/CircleButton.svg';
-import productImage from '/image/product/product.jpg';
+import searchIcon from '@/assets/image/icon/magnifying-glass.svg';
+import CircleButton from '@/assets/image/icon/CircleButton.svg';
+import productImage from '@/assets/image/product/product.jpg';
 import productStore from '@/stores/productStore';
 import { mapState, mapActions } from 'pinia';
 import FrontPagination from '@/components/front/FrontPagination.vue';

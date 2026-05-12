@@ -39,7 +39,7 @@
 <script>
 import cartStore from '@/stores/cartStore';
 import { CakeIcon, ShoppingCartIcon } from '@heroicons/vue/16/solid';
-import headerLogo from '/image/main-logo.svg';
+import headerLogo from '@/assets/image/main-logo.svg';
 import { mapState, mapActions } from 'pinia';
 export default {
   data() {
