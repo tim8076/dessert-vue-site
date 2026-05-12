@@ -1,1 +1,0 @@
-const e="/dessert-vue-site/image/main-logo.svg",s="/dessert-vue-site/image/footer/facebook.svg",t="/dessert-vue-site/image/footer/instagram%20(1).svg",o="/dessert-vue-site/image/footer/twitter.svg";export{s as f,e as h,t as i,o as t};
